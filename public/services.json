@@ -1,0 +1,49 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. John Smith",
+      "specialty": "Cardiology",
+      "location": "New York",
+      "rating": 4.8,
+      "image": "https://i.ibb.co/9txkFNh/Cardiology.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Sarah Johnson",
+      "specialty": "Dermatology",
+      "location": "Los Angeles",
+      "rating": 4.6,
+      "image": "https://i.ibb.co/Kj19zg7/Dermatology.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Robert Davis",
+      "specialty": "Orthopedics",
+      "location": "Chicago",
+      "rating": 4.9,
+      "image": "https://i.ibb.co/JHF1x92/Orthopedics.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Emily Thompson",
+      "specialty": "Pediatrics",
+      "location": "Houston",
+      "rating": 4.7,
+      "image": "https://i.ibb.co/CnrtwFP/Pediatrics.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Michael Lee",
+      "specialty": "Ophthalmology",
+      "location": "San Francisco",
+      "rating": 4.5,
+      "image": "https://i.ibb.co/2YG9q5B/Ophthalmology.jpg"
+    }
+  ]
+
+
+  
+
+
+
+  
