@@ -1,10 +1,27 @@
 import { Link } from 'react-router-dom';
 import logo from '../../../../../assets/doctors-medicine-doctor-logo-png-clipart-6.png'
+import { useContext } from 'react';
+import { AuthContext } from '../../../../../Provider/AuthProvider';
 
 const Navbar = () => {
+
+    const {user,logOut} = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+        .then(() =>{})
+        .catch(error => console.log(error))
+    }
+
     const navItems = <>
-    <li><Link to='/'>Home</Link></li>
-    <li><Link to='/about'>About</Link></li>
+    <li><Link className='text-xl font-semibold' to='/'>Home</Link></li>
+    <li><Link className='text-xl font-semibold' to='/about'>About</Link></li>
+    {user?.email ? <>
+        <li><Link className='text-xl font-semibold' to='/bookings'>My Bookings</Link></li>
+        <li><button className='text-xl font-semibold' onClick={handleLogOut}>LogOut</button></li>
+        
+    </>
+    : <li><Link className='text-xl font-semibold' to='/login'>Login</Link></li>}
     </>
 
     return (
@@ -21,9 +38,11 @@ const Navbar = () => {
                        
                     </ul>
                 </div>
+                <div>
                 <Link to='/' className="btn btn-ghost normal-case text-xl">
                     <img className='w-24 mask mask-hexagon' src={logo} alt="" />
                 </Link>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
